@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --titleColor: #6F1D1B;
+            --linksColor: #99582A;
+            --contentColor: #432818;
+            --normalTextColor: #BB9457;
+            --specialTextColor: #FFE6A7;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+        .links{
+            background-color: var(--linksColor);
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+        }
+        .content{
+            background-color: var(--contentColor);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        section{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: column;
+            text-align: center;
+            box-shadow: black 0px 0px 10px 1px inset;
+        }
+        section h1{   
+            color: var(--specialTextColor);
+        }
+        section img{
+            border: var(--specialTextColor) solid 2px;
+            padding: 4px;
+            background: var(--normalTextColor);
+            width: 80%;
+        }
+        section p{
+            border: solid 2px var(--specialTextColor);
+            background-color: var(--titleColor);
+            color: var(--normalTextColor);
+            border-radius: 20px;
+            padding: 20px 10px;
+            max-width: 80%;
+            box-shadow: black 0px 5px 10px;
+        }
+        a{
+            color: var(--specialTextColor);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 100ms;
+            text-decoration: none;
+            width: 100%;
+        }
+        a:hover{
+            background-color: var(--titleColor);
+        }
+        @media only screen and (max-width: 600px){
+            body{
+                grid-template-columns: 1fr;
+            }
+            .links{
+                flex-flow: row;
+            }
+            .content{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="a.html">A</a>
+        <a href="b.html">B</a>
+        <a href="c.html">C</a>
+        <a href="d.html">D</a>
+        <a href="e.html">E</a>
+        <a href="f.html">F</a>
+        <a href="g.html">G</a>
+        <a href="h.html">H</a>
+        <a href="i.html">I</a>
+        <a href="j.html">J</a>
+        <a href="k.html">K</a>
+        <a href="l.html">L</a>
+        <a href="m.html">M</a>
+        <a href="n.html">N</a>
+        <a href="o.html">O</a>
+        <a href="p.html">P</a>
+        <a href="q.html">Q</a>
+        <a href="r.html">R</a>
+        <a href="s.html">S</a>
+        <a href="t.html">T</a>
+        <a href="u.html">U</a>
+        <a href="v.html">V</a>
+        <a href="w.html">W</a>
+        <a href="x.html">X</a>
+        <a href="y.html">Y</a>
+        <a href="z.html">Z</a>
+    </div>
+    <div class="content">
+        <section>
+            <h1>A *(Estrela / Asterisco)</h1>
+            <img src="../images/a1.png">
+            <p>O A* é um algoritmo de busca informado, ou best-first search, o que significa que é formulado em termos de grafos ponderados: partindo de um nó inicial específico de um grafo, visa encontrar um caminho para o nó objetivo determinado com o menor custo (menor distância percorrida, menor tempo, etc.). Ele fá-lo mantendo uma árvore de caminhos originados no nó inicial e estendendo esses caminhos uma aresta de cada vez até que seu critério de término seja satisfeito.</p>
+        </section>
+        <section>
+            <h1>Arduino</h1>
+            <img src="../images/a2.jpeg">
+            <p>Arduino é uma plataforma programável de prototipagem eletrônica de placa única e hardware livre, que permite aos usuários criar objetos eletrônicos interativos e independentes, usando o microcontrolador Atmel AVR ou ARM com suporte de entrada/saída embutido, uma linguagem de programação padrão, essencialmente C/C++.</p>
+        </section>
+    </div>
+</body>
+</html>

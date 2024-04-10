@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --titleColor: #6F1D1B;
+            --linksColor: #99582A;
+            --contentColor: #432818;
+            --normalTextColor: #BB9457;
+            --specialTextColor: #FFE6A7;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+        .links{
+            background-color: var(--linksColor);
+            display: flex;
+            flex-flow: column;
+            justify-content: space-evenly;
+        }
+        .content{
+            background-color: var(--contentColor);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        section{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: column;
+            text-align: center;
+            box-shadow: black 0px 0px 10px 1px inset;
+        }
+        section h1{   
+            color: var(--specialTextColor);
+        }
+        section img{
+            border: var(--specialTextColor) solid 2px;
+            padding: 4px;
+            background: var(--normalTextColor);
+            width: 80%;
+        }
+        section p{
+            border: solid 2px var(--specialTextColor);
+            background-color: var(--titleColor);
+            color: var(--normalTextColor);
+            border-radius: 20px;
+            padding: 20px 10px;
+            max-width: 80%;
+            box-shadow: black 0px 5px 10px;
+        }
+        a{
+            color: var(--specialTextColor);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 100ms;
+            text-decoration: none;
+            width: 100%;
+        }
+        a:hover{
+            background-color: var(--titleColor);
+        }
+        @media only screen and (max-width: 600px){
+            body{
+                grid-template-columns: 1fr;
+            }
+            .links{
+                flex-flow: row;
+            }
+            .content{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="a.html">A</a>
+        <a href="b.html">B</a>
+        <a href="c.html">C</a>
+        <a href="d.html">D</a>
+        <a href="e.html">E</a>
+        <a href="f.html">F</a>
+        <a href="g.html">G</a>
+        <a href="h.html">H</a>
+        <a href="i.html">I</a>
+        <a href="j.html">J</a>
+        <a href="k.html">K</a>
+        <a href="l.html">L</a>
+        <a href="m.html">M</a>
+        <a href="n.html">N</a>
+        <a href="o.html">O</a>
+        <a href="p.html">P</a>
+        <a href="q.html">Q</a>
+        <a href="r.html">R</a>
+        <a href="s.html">S</a>
+        <a href="t.html">T</a>
+        <a href="u.html">U</a>
+        <a href="v.html">V</a>
+        <a href="w.html">W</a>
+        <a href="x.html">X</a>
+        <a href="y.html">Y</a>
+        <a href="z.html">Z</a>
+    </div>
+    <div class="content">
+        <section>
+            <h1>DIJKSTRA</h1>
+            <img src="../images/d1.png">
+            <p>O que é o algoritmo de Dijkstra? O algoritmo de Dijkstra é um algoritmo de caminho mínimo usado em grafos. Ele é usado para encontrar o caminho mais curto entre dois vértices em um grafo ponderado, onde os pesos são associados às arestas.</p>
+        </section>
+        <section>
+            <h1>DOCKER</h1>
+            <img src="../images/d2.png">
+            <p>O Docker é uma plataforma de software livre que permite aos desenvolvedores desenvolver, implementar, executar, atualizar e gerenciar componentes de contêineres executáveis e padronizados que combinam o código-fonte de aplicativos com as bibliotecas e estruturas do sistema operacional</p>
+        </section>
+    </div>
+</body>
+</html>
